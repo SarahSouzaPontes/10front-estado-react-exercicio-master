@@ -1,0 +1,12 @@
+.container{
+height: 100 vh;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.sidebar{
+background: linear-gradient(180deg, #000000 0%, rgba(15, 13, 15, 0.65) 100%);
+box-shadow: 4px 4px 4px rba(0, 0, 0, 0.25);
+height: 100vh;
+width: 224px;
+}

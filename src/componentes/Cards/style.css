@@ -1,0 +1,9 @@
+.card{
+    cursor: pointer;
+    height: 236px;
+
+}
+
+.card: houver{
+    transform: scale(1.05);
+}
