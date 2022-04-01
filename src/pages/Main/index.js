@@ -1,24 +1,33 @@
 import './style.css';
-import Logo from '../../assets/logo.svg';
 import Sidebar from '../../componentes/Sidebar';
 import Card from '../../componentes/Cards';
 import cards from '../../cards'
+import { useState } from 'react';
+import CongratsImage from '../../assets/congrats.png'
 
 function Main() {
-  const [stateCards, setStateCards] = useState([cards]);
+  const [stateCards, setStateCards] = useState([...cards]);
   return (
     <div className="container">
-      <Sidebar />
+      <Sidebar
+        cards={cards}
+        setStateCards={setStateCards} />
       <div className='container-main'>
-        {stateCards.map((card) => (
-          <div className='container-cards'>
+        <div className='container-cards'
+          style={{ 'justifyContent': `${stateCards.length ? 'flex-start' : 'center'}` }}
+        >
+          {stateCards.length ? stateCards.map((card) => (
+
             <Card key={card.id} card={card}
               stateCards={stateCards}
               setStateCards={setStateCards} />
-        ))}
-          </div>
-    </div>
-    </div>
+          ))
+            :
+            <img src={CongratsImage} alt='parabéns'></img>
+          }
+        </div>
+      </div>
+    </div >
 
   );
 }

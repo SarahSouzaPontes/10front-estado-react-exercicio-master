@@ -31,49 +31,49 @@ const cards = [
     turned: false
   },
   {
-    id: 6,
+    id: 5,
     slug: 'netlify',
     image: Netlify,
     turned: false
   },
   {
-    id: 7,
+    id: 6,
     slug: 'nodejs',
     image: Nodejs,
     turned: false
   },
   {
-    id: 8,
+    id: 7,
     slug: 'javascript',
     image: Javascript,
     turned: false
   },
   {
-    id: 9,
+    id: 8,
     slug: 'netlify',
     image: Netlify,
     turned: false
   },
   {
-    id: 10,
+    id: 9,
     slug: 'react',
     image: React,
     turned: false
   },
   {
-    id: 11,
+    id: 10,
     slug: 'nodejs',
     image: Nodejs,
     turned: false
   },
   {
-    id: 12,
+    id: 11,
     slug: 'react',
     image: React,
     turned: false
   },
   {
-    id: 5,
+    id: 12,
     slug: 'heroku',
     image: Heroku,
     turned: false
